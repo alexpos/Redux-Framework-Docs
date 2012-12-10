@@ -1,74 +1,477 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+title: Redux-Theme-Options-Framework
+---
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Redux-framework-docs : Documentation for the Redux Framework" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Redux-framework-docs</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/plovs/Redux-Framework-Docs">View on GitHub</a>
-
-          <h1 id="project_title">Redux-framework-docs</h1>
-          <h2 id="project_tagline">Documentation for the Redux Framework</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/plovs/Redux-Framework-Docs/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/plovs/Redux-Framework-Docs/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+<header id="main-header">
+<div class="container header">
+    <div class="row">
+    <div class="span12"><img src="./img/main1.png"/></div>
     </div>
+</div>
+</header>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
+ <hr/>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+        <style>
+          .affix {
+            position: fixed;
+            top: 40px;
+            left: 0;
+            /*right: auto;*/
+            width: 100%;
+          }
+        </style>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<div class="container header">
+    <div class="row">
+        <div id="stickynav" class="navbar affix-top" data-spy="affix" data-offset-top="420">
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="./index.html">{{ site.project }}</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="#main-header">Overview</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#screenshots">Screenshots</a></li>
+              <li><a href="#fields">Fields</a></li>
+              <li><a href="#validation">Validation</a></li>
+              <li><a href="{{ site.base_dir }}/docs.html">Documentation</a></li>
+              <li class="divider-vertical"></li>
+              <li><a href="{{ site.download }}">Download</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+        </div> <!-- navbar -->
     </div>
+</div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Redux-framework-docs maintained by <a href="https://github.com/plovs">plovs</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
 
-    
 
-  </body>
-</html>
+<div class="container main">
+</div>
+ <hr/>
+
+
+<!-- Masthead
+================================================== -->
+<nav class="row">
+<div class="span9" id="main-heading">
+    <h1>Simple, easy to use, very extendable Options framework for WP themes.</h1>
+</div>
+<div class="span3 download-info">
+  <a href="{{ site.github }}" class="btn btn-info btn-large">View project on GitHub</a>
+  <a href="{{ site.download }}" class="btn btn-large">Download Framework <small>(v1.0.5)</small></a>
+</div>
+
+</nav>
+
+<hr/>
+
+<div id="intro">
+<blockquote>
+<p>There are many great theme option frameworks out there already, like the <a href="http://wptheming.com/options-framework-theme/" target="_blank">Options Framework</a>, and the <a href="http://upthemes.com/upthemes-framework/" target="_blank">UP Theme Framework</a>. Which is great, alot of this frameworks ideas, and functionality has been built upon the knowledge gained from those frameworks. But neither of them provided me with the extendability i needed/wanted. What i really wanted to do was merge those frameworks and add a little spice. I wanted a few specific things that have been the core reason for this framework.</p>
+<ul>
+<li><strong>Section Tabs</strong> - I wanted each settings section to have its own "tab" which can be clicked through.</li>
+<li><strong>Use the WordPress Core Settings API</strong> - I wanted the settings to use the core WordPress functions for creating/editing settings (no point reinventing the wheel).</li>
+<li><strong>Custom Error Handling</strong> - Inline with the custom tabs i wanted to be able to display error totals, and custom messages for each section/setting.</li>
+<li><strong>Easily Extendable</strong> - I wanted to be able to extend the framework for custom use applications. For settings fields and custom validation.</li>
+<li><strong>Customisable</strong> - I wanted to be able to customise the functionality, and style without hacking at the core.</li>
+</ul>
+<p>This is why the Redux Theme Options Framework has been created. Every function/action can be customised, with more hook points and configuration options being added with every update.</p>
+<small class="pull-right">Lee Mason - <a href="http://no-half-pixels.com" target="_blank">No Half Pixels</a></small>
+</blockquote>
+</div>
+
+<hr/>
+<div class="heading" id="features">
+<h1>Framework Features.</h1>
+<p class="h-byline">The Redux Theme Options Framework has an exhaustive list of features, which include...</p>
+</div>
+<div class="row">
+  <div class="span4">
+    <img src="./img/glyphicons/glyphicons_009_magic.png" class="main-icons"/><h2 class="main-icons-header">Simple, Easy to use</h2>
+    <p>Simple Theme Options Framework for WordPress, Leaving you to concentrate on creating beutiful WP Themes.</p>
+  </div>
+  <div class="span4">
+    <img src="./img/glyphicons/glyphicons_114_list.png" class="main-icons"/><h2 class="main-icons-header">Built In Field Types</h2>
+    <p>Contains many built in field types for easy use (all basic field types like text, checkbox, select, upload are built in).</p>
+  </div>
+  <div class="span4">
+    <img src="./img/glyphicons/glyphicons_240_rotation_lock.png" class="main-icons"/><h2 class="main-icons-header">Built In Validation Methods</h2>
+    <p>Contains many built in validation methods for clean data saving (email, url, numeric, escape js, no html, html).</p>
+  </div>
+</div>
+
+<div class="row main-icons-row">
+  <div class="span4">
+    <img src="./img/glyphicons/glyphicons_196_circle_exclamation_mark.png" class="main-icons"/><h2 class="main-icons-header">Custom Error/Warning Handling</h2>
+    <p>Using the Validation methods you can create custom errorand warning messages for each field type.</p>
+  </div>
+  <div class="span4">
+    <img src="./img/glyphicons/glyphicons_137_cogwheels.png" class="main-icons"/><h2 class="main-icons-header">Multiple Option Sections</h2>
+    <p>Have as many, or as little sections as you need.</p>
+  </div>
+  <div class="span4">
+    <img src="./img/glyphicons/glyphicons_195_circle_info.png" class="main-icons"/><h2 class="main-icons-header">Custom Tab Sections</h2>
+    <p>Want to show additional info in your options panrl? Its there for you to use and abuse.</p>
+  </div>
+</div>
+
+<div class="row main-icons-row">
+  <div class="span4">
+    <img src="./img/glyphicons/glyphicons_118_embed_close.png" class="main-icons"/><h2 class="main-icons-header">Extendable Field Classes</h2>
+    <p>Easily create custom field classes for use in your theme options. <a href="{{ site.base_dir }}/docs.html">Documentation</a></p>
+  </div>
+  <div class="span4">
+    <img src="./img/glyphicons/glyphicons_118_embed_close.png" class="main-icons"/><h2 class="main-icons-header">Extendable Validation Classes</h2>
+    <p>Want custom validation? Just use the extendable Validation Class methods. <a href="{{ site.base_dir }}/docs.html">Documentation</a></p>
+  </div>
+  <div class="span4">
+    <img src="./img/glyphicons/glyphicons_083_random.png" class="main-icons"/><h2 class="main-icons-header">Fully Customisable</h2>
+    <p>Many Hook points to customise the Framework to your requirements. <a href="{{ site.base_dir }}/docs.html">Documentation</a></p>
+  </div>
+</div>
+
+
+<hr/>
+<div class="heading" id="screenshots">
+<h1>Framework Screenshots.</h1>
+<p class="h-byline">The Redux Theme Options Framework has some slick default styling (all of which is customisable of course). Here is what it looks like in its default state.</p>
+</div>
+
+<div class="row">
+<div class="span10 offset1">
+<ul class="thumbnails example-sites">
+  <li class="span2">
+  <a class="thumbnail fancybox" rel="gallery" href="./img/shots/1-Redux-Text-Fields.png" title="Framework Text Fields"><img alt="" src="./img/shots/thumbs/1-Redux-Text-Fields.png"></a>
+  </li>
+  <li class="span2">
+  <a class="thumbnail fancybox" rel="gallery" href="./img/shots/2-Redux-Checkbox-Radio-Fields.png" title="Framework Checkbox / Radio Fields"><img alt="" src="./img/shots/thumbs/2-Redux-Checkbox-Radio-Fields.png"></a>
+  </li>
+  <li class="span2">
+    <a class="thumbnail fancybox" rel="gallery" href="./img/shots/3-Redux-Select-Fields.png" title="Framework Select Fields"><img alt="" src="./img/shots/thumbs/3-Redux-Select-Fields.png"></a>
+  </li>
+  <li class="span2">
+    <a class="thumbnail fancybox" rel="gallery" href="./img/shots/4-Redux-Custom-Fields.png" title="Framework Custom Fields"><img alt="" src="./img/shots/thumbs/4-Redux-Custom-Fields.png"></a>
+  </li>
+  <li class="span2">
+    <a class="thumbnail fancybox" rel="gallery" href="./img/shots/5-Redux-Novalue-Fields.png" title="Framework No Value Fields"><img alt="" src="./img/shots/thumbs/5-Redux-Novalue-Fields.png"></a>
+  </li>
+  <li class="span2">
+    <a class="thumbnail fancybox" rel="gallery" href="./img/shots/6-Redux-Import-Export.png" title="Framework Import / Export Options"><img alt="" src="./img/shots/thumbs/6-Redux-Import-Export.png"></a>
+  </li>
+  <li class="span2">
+    <a class="thumbnail fancybox" rel="gallery" href="./img/shots/7-Redux-Docs.png" title="Framework Docs"><img alt="" src="./img/shots/thumbs/7-Redux-Docs.png"></a>
+  </li>
+  <li class="span2">
+    <a class="thumbnail fancybox" rel="gallery" href="./img/shots/8-Redux-Theme-Info.png" title="Framework Custom Tab Section"><img alt="" src="./img/shots/thumbs/8-Redux-Theme-Info.png"></a>
+  </li>
+  <li class="span2">
+    <a class="thumbnail fancybox" rel="gallery" href="./img/shots/9-Redux-Dev-Mode.png" title="Framework Dev Mode Section"><img alt="" src="./img/shots/thumbs/9-Redux-Dev-Mode.png"></a>
+  </li>
+  <li class="span2">
+    <a class="thumbnail fancybox" rel="gallery" href="./img/shots/10-Redux-Messages.png" title="Framework Custom Save, Error, Imported, Edited Messages"><img alt="" src="./img/shots/thumbs/10-Redux-Messages.png"></a>
+  </li>
+
+</ul>
+</div>
+</div>
+
+
+<hr/>
+<div class="heading" id="fields">
+<h1>Field Types.</h1>
+<p class="h-byline">The Redux Theme Options Framework has many built in field types, which include...</p>
+</div>
+<div class="row">
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/The-Text-Field.html">
+    <img src="./img/glyphicons/glyphicons_100_font.png" class="main-icons"/><h2 class="main-icons-header">Text</h2>
+    <p>The most basic of form fields. Basic, but important.</p></a>
+  </div>
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-textarea-field.html">
+    <img src="./img/glyphicons/glyphicons_110_align_left.png" class="main-icons"/><h2 class="main-icons-header">Textarea</h2>
+    <p>Again basic, but essencial.</p></a>
+  </div>
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-checkbox-field.html">
+    <img src="./img/glyphicons/glyphicons_152_check.png" class="main-icons" style="margin-top:10px;" /><h2 class="main-icons-header">Checkbox</h2>
+    <p>The humble "Check if you want to.....".</p></a>
+  </div>
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-multi-checkbox-field.html">
+    <img src="./img/glyphicons/glyphicons_154_more_windows.png" class="main-icons"/><h2 class="main-icons-header">Multi Checkbox</h2>
+    <p>The expanded "Check if you want to.....".</p></a>
+  </div>
+</div>
+
+<div class="row main-icons-row">
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-select-field.html">
+    <img src="./img/glyphicons/glyphicons_108_left_indent.png" class="main-icons"/><h2 class="main-icons-header">Select</h2>
+    <p>Want to provide a list of possible option values.</p></a>
+  </div>
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-multi-select-field.html">
+    <img src="./img/glyphicons/glyphicons_114_list.png" class="main-icons"/><h2 class="main-icons-header">Multiple Select</h2>
+    <p>Need the option to have multiple option values at once?</p></a>
+  </div>
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-editor-field.html">
+    <img src="./img/glyphicons/glyphicons_106_text_width.png" class="main-icons"/><h2 class="main-icons-header">Tiny MCE Editor</h2>
+    <p>Want a full rich editing experience? Use the best editor around.</p></a>
+  </div>
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-radio-img.html">
+    <img src="./img/glyphicons/glyphicons_156_show_thumbnails.png" class="main-icons"/><h2 class="main-icons-header">Radio</h2>
+    <p>Multiple option choices, one outcome?</p></a>
+  </div>
+</div>
+
+<div class="row main-icons-row">
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-radio-img-field.html">
+    <img src="./img/glyphicons/glyphicons_138_picture.png" class="main-icons"/><h2 class="main-icons-header">Radio Images</h2>
+    <p>Great for showing a page layout option.</p></a>
+  </div>
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-button-set-field.html">
+    <img src="./img/glyphicons/glyphicons_155_show_big_thumbnails.png" class="main-icons"/><h2 class="main-icons-header">Button Set</h2>
+    <p>Want to use some jQuery UI goodness? Use a button set.</p>
+  </div>
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-date-field.html">
+    <img src="./img/glyphicons/glyphicons_045_calendar.png" class="main-icons"/><h2 class="main-icons-header">Date</h2>
+    <p>Privide a calendar widget for users to select a date.</p>
+  </div>
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-color-field.html">
+    <img src="./img/glyphicons/glyphicons_042_pie_chart.png" class="main-icons"/><h2 class="main-icons-header">Color</h2>
+    <p>Need some custom colors? Use the Farbtastic color picker.</p>
+  </div>
+</div>
+
+
+<div class="row main-icons-row">
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-upload-field.html">
+    <img src="./img/glyphicons/glyphicons_201_upload.png" class="main-icons"/><h2 class="main-icons-header">Upload</h2>
+    <p>Upload images/files, great for logo options.</p></a>
+  </div>
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-wordpress-pages-select-field.html">
+    <img src="./img/glyphicons/glyphicons_039_notes.png" class="main-icons"/><h2 class="main-icons-header">WP Pages</h2>
+    <p>Display a drop down list of WP pages.</p></a>
+  </div>
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-wordpress-pages-multi-select-field.html">
+    <img src="./img/glyphicons/glyphicons_039_notes.png" class="main-icons"/><h2 class="main-icons-header">WP Pages Multi</h2>
+    <p>Display a multi select drop down list of WP pages.</p></a>
+  </div>
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-wordpress-posts-select-field.html">
+    <img src="./img/glyphicons/glyphicons_030_pencil.png" class="main-icons"/><h2 class="main-icons-header">WP Posts</h2>
+    <p>Display a drop down list of WP posts.</p></a>
+  </div>
+</div>
+
+
+<div class="row main-icons-row">
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-wordpress-posts-multi-select-field.html"><img src="./img/glyphicons/glyphicons_030_pencil.png" class="main-icons"/><h2 class="main-icons-header">WP Posts Multi</h2>
+    <p>Display a multi select drop down list of WP posts.</p></a>
+  </div>
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-wordpress-tags-select-field.html">
+    <img src="./img/glyphicons/glyphicons_065_tag.png" class="main-icons"/><h2 class="main-icons-header">WP Tags</h2>
+    <p>Display a drop down list of WP tags.</p></a>
+  </div>
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-wordpress-tags-multi-select-field.html">
+    <img src="./img/glyphicons/glyphicons_066_tags.png" class="main-icons"/><h2 class="main-icons-header">WP Tags Multi</h2>
+    <p>Display a multi select drop down list of WP tags.</p></a>
+  </div>
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-wordpress-categories-select-field.html">
+    <img src="./img/glyphicons/glyphicons_144_folder_open.png" class="main-icons"/><h2 class="main-icons-header">WP Categories</h2>
+    <p>Display a drop down list of WP cats.</p></a>
+  </div>
+</div>
+
+
+<div class="row main-icons-row">
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-wordpress-categories-multi-select-field.html">
+    <img src="./img/glyphicons/glyphicons_149_folder_new.png" class="main-icons"/><h2 class="main-icons-header">WP Categories Multi</h2>
+    <p>Display a multi select drop down list of WP cats.</p></a>
+  </div>
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-wordpress-menu-select-field.html">
+    <img src="./img/glyphicons/glyphicons_281_bullets.png" class="main-icons"/><h2 class="main-icons-header">WP Menu Select</h2>
+    <p>Display a drop down list of WP menus that you have created.</p></a>
+  </div>
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-wordpress-menu-location-select-field.html">
+    <img src="./img/glyphicons/glyphicons_328_podium.png" class="main-icons"/><h2 class="main-icons-header">WP Menu Locations</h2>
+    <p>Display a drop down list of the current themes registered menu locations.</p></a>
+  </div>
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-wordpress-post-type-select-field.html">
+    <img src="./img/glyphicons/glyphicons_319_sort.png" class="main-icons"/><h2 class="main-icons-header">WP Post Type Select</h2>
+    <p>Display a drop down list of WP post types.</p></a>
+  </div>
+</div>
+
+
+<div class="row main-icons-row">
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-checkbox-hide-below-field.html">
+    <img src="./img/glyphicons/glyphicons_009_magic.png" class="main-icons"/><h2 class="main-icons-header">Checkbox Hide Below</h2>
+    <p>Checkbox option which hides the next field if not checked.</p></a>
+  </div>
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-select-hide-below-field.html">
+    <img src="./img/glyphicons/glyphicons_009_magic.png" class="main-icons"/><h2 class="main-icons-header">Select Hide Below</h2>
+    <p>Select menu that will hide the next option based on selected setting.</p></a>
+  </div>
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-divide-field.html">
+    <img src="./img/glyphicons/glyphicons_249_divide.png" class="main-icons" style="margin-top:10px;" /><h2 class="main-icons-header">Field Seperator Divide</h2>
+    <p>Divide the settings section for less intense option fields, divides the settings and adds a border line.</p></a>
+  </div>
+  <div class="span3">
+    <a href="{{ site.base_dir }}/docs/types/the-info-field.html">
+    <img src="./img/glyphicons/glyphicons_195_circle_info.png" class="main-icons"/><h2 class="main-icons-header">Info Field</h2>
+    <p>Display an info section, great if a setting needs additional info.</p></a>
+  </div>
+</div>
+
+
+<div class="row main-icons-row">
+  <div class="span4">
+    <a href="{{ site.base_dir }}/docs/types/the-color-field.html">
+    <img src="./img/glyphicons/glyphicons_042_pie_chart.png" class="main-icons"/><h2 class="main-icons-header">Color Gradient</h2>
+    <p>Allow the user to select start and finish colors using the farbtastic color picker.</p></a>
+  </div>
+  <div class="span4">
+    <a href="{{ site.base_dir }}/docs/types/the-multi-text-field.html">
+    <img src="./img/glyphicons/glyphicons_281_bullets.png" class="main-icons" style="margin-top:10px;" /><h2 class="main-icons-header">Multi Text Option</h2>
+    <p>Need dynamic text fields? Its easy with the framework.</p></a>
+  </div>
+  <div class="span4">
+    <a href="{{ site.base_dir }}/docs/types/google-font-select.html">
+    <img src="./img/glyphicons/glyphicons_106_text_width.png" class="main-icons"/><h2 class="main-icons-header">Google Fonts Select</h2>
+    <p>want to use a custom font provided by Google Web Fonts? Its easy with the simple dropdown list selction field.</p></a>
+  </div>
+</div>
+
+
+
+
+<hr/>
+<div class="heading" id="validation">
+<h1>Validation Classes.</h1>
+<p class="h-byline">The Redux Theme Options Framework has many built in validation classes, which include...</p>
+</div>
+<div class="row">
+  <div class="span4">
+    <a href="{{ site.base_dir }}/docs/validation/email-validation-class.html">
+    <img src="./img/glyphicons/glyphicons_419_e-mail.png" class="main-icons"/><h2 class="main-icons-header">Email</h2>
+    <p>Makes sure the users inputs a valid email address.</p>
+  </div>
+  <div class="span4">
+    <a href="{{ site.base_dir }}/docs/validation/url-validation-class.html">
+    <img src="./img/glyphicons/glyphicons_151_new_window.png" class="main-icons"/><h2 class="main-icons-header">URL</h2>
+    <p>Checks the submitted value is a URL.</p></a>
+  </div>
+  <div class="span4">
+    <a href="{{ site.base_dir }}/docs/validation/numeric-validation-class.html">
+    <img src="./img/glyphicons/glyphicons_194_circle_question_mark.png" class="main-icons" /><h2 class="main-icons-header">Numeric</h2>
+    <p>Makes sure the value is numerical.</p></a>
+  </div>
+</div>
+
+<div class="row main-icons-row">
+  <div class="span4">
+    <a href="{{ site.base_dir }}/docs/validation/comma-numeric-validation-class.html">
+    <img src="./img/glyphicons/glyphicons_191_circle_minus.png" class="main-icons"/><h2 class="main-icons-header">Comma Seperated Numeric</h2>
+    <p>Only allows numeric values seperated by comma's.</p></a>
+  </div>
+  <div class="span4">
+    <a href="{{ site.base_dir }}/docs/validation/html-validation-class.html">
+    <img src="./img/glyphicons/glyphicons_118_embed_close.png" class="main-icons" /><h2 class="main-icons-header">HTML</h2>
+    <p>Filter and clean HTML input just like WordPress does.</p></a>
+  </div>
+  <div class="span4">
+    <a href="{{ site.base_dir }}/docs/validation/custom-html-validation-class.html">
+    <img src="./img/glyphicons/glyphicons_117_embed.png" class="main-icons" style="margin-top:10px;"/><h2 class="main-icons-header">HTML Custom</h2>
+    <p>Filter and clean HTML with custom defined rules.</p></a>
+  </div>
+</div>
+
+<div class="row main-icons-row">
+  <div class="span4">
+    <a href="{{ site.base_dir }}/docs/validation/no-html-validation-class.html">
+    <img src="./img/glyphicons/glyphicons_199_ban.png" class="main-icons"/><h2 class="main-icons-header">No HTML</h2>
+    <p>Strip HTML content from a string.</p></a>
+  </div>
+  <div class="span4">
+    <a href="{{ site.base_dir }}/docs/validation/no-special-chars-validation-class.html">
+    <img src="./img/glyphicons/glyphicons_248_asterisk.png" class="main-icons"/><h2 class="main-icons-header">No Special Characters</h2>
+    <p>Filter and remove any Special Charaters.</p></a>
+  </div>
+  <div class="span4">
+    <a href="{{ site.base_dir }}/docs/validation/color-validation-class.html">
+    <img src="./img/glyphicons/glyphicons_042_pie_chart.png" class="main-icons"/><h2 class="main-icons-header">Color</h2>
+    <p>Check for a valid HTML hex value.</p></a>
+  </div>
+</div>
+
+
+<div class="row main-icons-row">
+  <div class="span4">
+    <a href="{{ site.base_dir }}/docs/validation/date-validation-class.html">
+    <img src="./img/glyphicons/glyphicons_045_calendar.png" class="main-icons" /><h2 class="main-icons-header">Date</h2>
+    <p>Check for a valid date input.</p></a>
+  </div>
+  <div class="span4">
+    <a href="{{ site.base_dir }}/docs/validation/str-replace-validation-class.html">
+    <img src="./img/glyphicons/glyphicons_214_resize_small.png" class="main-icons"/><h2 class="main-icons-header">Str Replace</h2>
+    <p>Programatically replace elements of the value.</p></a>
+  </div>
+  <div class="span4">
+    <a href="{{ site.base_dir }}/docs/validation/preg-replace-validation-class.html">
+    <img src="./img/glyphicons/glyphicons_215_resize_full.png" class="main-icons"/><h2 class="main-icons-header">Preg Replace</h2>
+    <p>Programatically replace elements of the value.</p></a>
+  </div>
+</div>
+
+<div class="row main-icons-row">
+  <div class="span4 offset4">
+    <a href="{{ site.base_dir }}/docs/validation/js-validation-class.html">
+    <img src="./img/glyphicons/glyphicons_118_embed_close.png" class="main-icons"/><h2 class="main-icons-header">Escape JS</h2>
+    <p>Escape Javascript Code input.</p></a>
+  </div>
+</div>
+
+
+<hr/>
+<div class="heading" id="fields">
+<h1>Framework Extended.</h1>
+<p class="h-byline">The Redux Theme Options Framework has many built in features, buts its best feature is the way it allows you to create / extend the framework. By creating field classes, validation classes, or custom callback functions for both field, and validation.</p>
+<p class="h-byline">There are multiple hook and filter references throughout the Framework which are designed so you can spend you time creating great themes. And only worrying about the options if you need very custom functionality (which by the way is a posibility with the Framework).</p>
+<p class="h-byline">Check out the <a href="{{ site.base_dir }}/docs.html">Documentation</a> for more details on extending the Core Framework.</p>
+</div>
+
+
+<hr/>

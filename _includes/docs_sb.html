@@ -1,0 +1,79 @@
+<div class="accordion" id="accordion2">
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+        Using the Framework
+      </a>
+    </div>
+    <div id="collapseOne" class="accordion-body collapse {% if page.group contains "Using the Framework" %} in {% endif %} ">
+      <div class="accordion-inner">
+    {% assign pages_list = site.pages %}
+    {% assign group = 'Using the Framework' %}
+    {% include pages_acc %}
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+        Extending the Framework
+      </a>
+    </div>
+    <div id="collapseTwo" class="accordion-body collapse {% if page.group contains "Extending the Framework" %} in {% endif %} ">
+      <div class="accordion-inner">
+{% assign pages_list = site.pages %}
+{% assign group = 'Extending the Framework' %}
+{% include pages_acc %}
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-group">
+      <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+          Validation Classes
+        </a>
+      </div>
+      <div id="collapseThree" class="accordion-body collapse {% if page.group contains "Validation Classes" %} in {% endif %} ">
+        <div class="accordion-inner">
+  {% assign pages_list = site.pages %}
+  {% assign group = 'Validation Classes' %}
+  {% include pages_acc %}
+        </div>
+      </div>
+    </div>
+
+  <div class="accordion-group">
+      <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+          Field Types
+        </a>
+      </div>
+      <div id="collapseFour" class="accordion-body collapse {% if page.group contains "Field Types" %} in {% endif %} ">
+        <div class="accordion-inner">
+  {% assign pages_list = site.pages %}
+  {% assign group = 'Field Types' %}
+  {% include pages_acc %}
+        </div>
+      </div>
+    </div>
+
+  <div class="accordion-group">
+      <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
+          Non Value Field Types
+        </a>
+      </div>
+      <div id="collapseFive" class="accordion-body collapse {% if page.group contains "Non Value Field Types" %} in {% endif %} ">
+        <div class="accordion-inner">
+  {% assign pages_list = site.pages %}
+  {% assign group = 'Non Value Field Types' %}
+  {% include pages_acc %}
+        </div>
+      </div>
+    </div>
+
+</div>
+

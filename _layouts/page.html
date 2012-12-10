@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div id="post">
+
+{% if page.category contains "Documentation" %}
+
+<div class="row">
+    <div class="span3"> {% include docs_sb.html %} </div>
+    <div class="span9">
+        <h1>{{ page.title }}</h1>
+        {% if page.content == empty %}
+                Nothing has been written yet
+        {% else %}
+                {{ content }}
+        {% endif %}
+    </div>
+</div>
+{% else %}
+
+<div class="row">
+    <div class="span12">
+        {% if page.content == empty %}
+                Nothing has been written yet
+        {% else %}
+                {{ content }}
+        {% endif %}
+    </div>
+</div>
+
+{% endif %}
+
+
+</div>

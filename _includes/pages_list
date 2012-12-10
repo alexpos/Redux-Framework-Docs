@@ -1,0 +1,15 @@
+  {% for node in pages_list %}
+    {% if group == null or group == node.group %}
+      {% if page.url == node.url %}
+      <li class="active"><a href="{{ site.base_dir }}{{node.url}}" class="active">{{node.title}}</a></li>
+      {% else %}
+              <li><a href="{{ site.base_dir }}{{node.url}}">{{node.title}}</a>
+            {% if node.status %}
+              <span class="label label-warning">{{ node.status}}</span>
+            {% endif %}
+              </li>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% assign pages_list = nil %}
+{% assign group = nil %}

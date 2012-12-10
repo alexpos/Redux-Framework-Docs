@@ -1,0 +1,25 @@
+---
+layout: page
+title: Pages
+header: Pages
+group: system-page
+---
+
+<h2>All Pages</h2>
+{% assign pages_list = site.pages %}
+{% include pages_list %}
+
+<h2>Documentation</h2>
+{% assign pages_list = site.pages %}
+{% assign group = 'docs' %}
+{% include pages_list %}
+
+<h2>System Pages</h2>
+{% assign pages_list = site.pages %}
+{% assign group = 'system-page' %}
+{% include pages_list %}
+
+<br/>
+<p>
+  View the source-code for more info.
+</p>

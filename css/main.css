@@ -1,0 +1,6 @@
+.container {
+	width:auto;
+	max-width: 720px;
+}
+.container h1 > a:hover, .container h1 > a:focus, .container h1 > a:active { text-decoration: none; }
+#post p { text-indent: 35px; }

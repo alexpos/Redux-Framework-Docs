@@ -1,0 +1,60 @@
+{% if page.category contains "Documentation" %}
+
+<div id="sidebar" class="sidebar">
+  <h4>The Docs</h4>
+  <ul>
+  <h5>Using the Framework</h5>
+  {% if page.group contains "Using the Framework" %}
+    {% assign pages_list = site.pages %}
+    {% assign group = 'Using the Framework' %}
+    {% include pages_list %}
+  {% endif %}
+<h5>Extending the Framework</h5>
+  {% if page.group contains "Extending the Framework" %}
+{% assign pages_list = site.pages %}
+{% assign group = 'Extending the Framework' %}
+{% include pages_list %}
+{% endif %}
+<h5>Validation Classes</h5>
+  {% if page.group contains "Validation Classes" %}
+{% assign pages_list = site.pages %}
+{% assign group = 'Validation Classes' %}
+{% include pages_list %}
+{% endif %}
+<h5>Field Types</h5>
+{% if page.group contains "Field Types" %}
+  {% assign pages_list = site.pages %}
+  {% assign group = 'Field Types' %}
+  {% include pages_list %}
+  {% else %}
+  adcasdcsd
+{% endif %}
+<h5>Non Value Field Types</h5>
+  {% if page.group contains "Non ValueField Types" %}
+    {% assign pages_list = site.pages %}
+    {% assign group = 'Non Value Field Types' %}
+    {% include pages_list %}
+  {% endif %}
+  </ul>
+
+</div>
+
+{% elsif page.categories contains "api" or page.categories contains "lessons" %}
+
+<div id="sidebar" class="sidebar">
+  <h4>1 - Learn Jekyll</h4>
+  <ul>
+    {% assign pages_list = site.tags.learn %}
+    {% include pages_list %}
+  </ul>
+
+  <br>
+  <h4>2 - Learn Jekyll Bootstrap</h4>
+  <ul>
+    {% assign pages_list = site.tags.jb %}
+    {% include pages_list %}
+  </ul>
+
+</div>
+
+{% endif %}
