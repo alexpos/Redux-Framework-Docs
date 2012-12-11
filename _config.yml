@@ -1,5 +1,7 @@
-destination: Redux-Framework
+destination: Redux-Framework-Docs
 # markdown: redcarpet
+
+server: false
 
 base_dir: /Redux-Framework-Docs
 

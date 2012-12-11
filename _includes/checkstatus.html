@@ -1,0 +1,12 @@
+
+{% if page.status contains "wip" %}
+<div class="alert">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Work in progress!</strong> This page is not yet finished.
+</div>
+{% elsif page.status contains "todo" %}
+<div class="alert alert-info">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Thispage is planned</strong> But for now it is just a todo
+</div>
+{% endif %}
